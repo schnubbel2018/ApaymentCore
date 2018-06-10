@@ -430,7 +430,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Unix: ~/.apollon
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Apollon";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "ApollonCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -442,10 +442,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Apollon";
+    return pathRet / "ApollonCore";
 #else
     // Unix
-    return pathRet / ".apollon";
+    return pathRet / ".ApollonCore";
 #endif
 #endif
 }
