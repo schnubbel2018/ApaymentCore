@@ -508,6 +508,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
     while (fGenerateBitcoins || fProofOfStake) {
+        LogPrintf("while fGenerateBitcoins\n");
         if (fProofOfStake) {
             //control the amount of times the client will check for mintable coins
             if ((GetTime() - nMintableLastCheck > 5 * 60)) // 5 minute check time
@@ -543,12 +544,18 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //
         unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
         CBlockIndex* pindexPrev = chainActive.Tip();
+        
+        LogPrintf("pindexPrev=%s\n", pindexPrev.ToString());
         if (!pindexPrev)
             continue;
 
         unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, pwallet, fProofOfStake));
-        if (!pblocktemplate.get())
+        LogPrintf("pindexPrev=%s\n", pindexPrev.ToString());
+        
+        if (!pblocktemplate.get()){
             continue;
+            LogPrintf("!pblocktemplate");
+        }
 
         CBlock* pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
