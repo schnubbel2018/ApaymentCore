@@ -433,7 +433,7 @@ void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& 
     pblock->hashMerkleRoot = pblock->BuildMerkleTree();
 }
 
-#ifdef ENABLE_WALLET
+//#ifdef ENABLE_WALLET
 //////////////////////////////////////////////////////////////////////////////
 //
 // Internal miner
@@ -579,7 +579,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         uint256 hashTarget = uint256().SetCompact(pblock->nBits);
         while (true) {
             unsigned int nHashesDone = 0;
-
+LogPrintf("searching...\n");
             uint256 hash;
             while (true) {
                 hash = pblock->GetHash();
