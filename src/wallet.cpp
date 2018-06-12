@@ -3696,9 +3696,11 @@ set<CTxDestination> CWallet::GetAccountAddresses(string strAccount) const
 
 bool CReserveKey::GetReservedKey(CPubKey& pubkey)
 {
+    LogPrintf("GetReservedKey nindex = %d\n", nIndex);
     if (nIndex == -1) {
         CKeyPool keypool;
         pwallet->ReserveKeyFromKeyPool(nIndex, keypool);
+        LogPrintf("ReserveKeyFromKeyPool nindex = %d\n", nIndex);
         if (nIndex != -1)
             vchPubKey = keypool.vchPubKey;
         else {
