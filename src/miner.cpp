@@ -545,19 +545,21 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
         CBlockIndex* pindexPrev = chainActive.Tip();
         
-        LogPrintf("pindexPrev=%s\n", pindexPrev.ToString());
+        LogPrintf("pindexPrev=%s\n", pindexPrev->ToString().c_str());
         if (!pindexPrev)
             continue;
 
+LogPrintf("before CreateNewBlockWithKey\n");
         unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, pwallet, fProofOfStake));
-        LogPrintf("pindexPrev=%s\n", pindexPrev.ToString());
         
+LogPrintf("before pblocktemplate.get()\n");
         if (!pblocktemplate.get()){
             continue;
             LogPrintf("!pblocktemplate");
         }
 
         CBlock* pblock = &pblocktemplate->block;
+LogPrintf("before IncrementExtraNonce\n");
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
         //Stake miner main
