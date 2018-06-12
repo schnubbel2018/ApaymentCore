@@ -450,6 +450,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet,
     }
 
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
+    LogPrintf("return CreateNewBlockWithKey()\n");
     return CreateNewBlock(scriptPubKey, pwallet, fProofOfStake);
 }
 
@@ -556,8 +557,8 @@ LogPrintf("before CreateNewBlockWithKey\n");
         
 LogPrintf("before pblocktemplate.get()\n");
         if (!pblocktemplate.get()){
-            continue;
             LogPrintf("!pblocktemplate");
+            continue;
         }
 
         CBlock* pblock = &pblocktemplate->block;
