@@ -113,7 +113,7 @@ public:
         pchMessageStart[3] = 0xfd;
         vAlertPubKey = ParseHex("042a44ffd3dda7dcf963ee1a1f3a0ad2983f3b3192f4e5c21d7c0b4e205ff4f346164ea027506583ee8dd638908336d246403dbf08724fe83ba6f2422d477245d9");
         nDefaultPort = 12116;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Apollon starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 9; // Apollon starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
