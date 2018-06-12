@@ -553,7 +553,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
 
 LogPrintf("before CreateNewBlockWithKey\n");
-        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, pwallet, fProofOfStake));
+        auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, pwallet, fProofOfStake));
         
 LogPrintf("before pblocktemplate.get()\n");
         if (!pblocktemplate.get()){
