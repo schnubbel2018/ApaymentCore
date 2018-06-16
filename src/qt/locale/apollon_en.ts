@@ -2804,7 +2804,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

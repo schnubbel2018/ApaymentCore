@@ -340,7 +340,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
-    }
+    } else {
+		if (!fProofOfStake)
+			txNew.vout[0].nValue = blockValue;
+	}
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()
@@ -372,8 +375,12 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
             }
         }
 
+        LogPrintf("dbg: pfrom->FulfilledRequest(\"mnget\")");
         pfrom->FulfilledRequest("mnget");
+        LogPrintf("dbg: masternodePayments.Sync(pfrom =  %i, nCountNeeded = %d);", pfrom->GetId(), nCountNeeded);
         masternodePayments.Sync(pfrom, nCountNeeded);
+        LogPrintf("dbg: mnget - Sent Masternode winners to peer %i\n", pfrom->GetId());
+        
         LogPrint("mnpayments", "mnget - Sent Masternode winners to peer %i\n", pfrom->GetId());
     } else if (strCommand == "mnw") { //Masternode Payments Declare Winner
         //this is required in litemodef

@@ -613,6 +613,8 @@ bool ConnectSocket(const CService &addrDest, SOCKET& hSocketRet, int nTimeout, b
 
 bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest, int portDefault, int nTimeout, bool* outProxyConnectionFailed)
 {
+    LogPrintf("dbg: ConnectSocketByName\n");
+    
     string strDest;
     int port = portDefault;
 
@@ -620,6 +622,7 @@ bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest
         *outProxyConnectionFailed = false;
 
     SplitHostPort(string(pszDest), port, strDest);
+    LogPrintf("dbg: SplitHostPort strDest: %s, port: %d\n", strDest, port);
 
     proxyType nameProxy;
     GetNameProxy(nameProxy);
@@ -627,13 +630,18 @@ bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest
     CService addrResolved(CNetAddr(strDest, fNameLookup && !HaveNameProxy()), port);
     if (addrResolved.IsValid()) {
         addr = addrResolved;
+        LogPrintf("dbg: return ConnectSocket\n");
         return ConnectSocket(addr, hSocketRet, nTimeout);
     }
 
     addr = CService("0.0.0.0:0");
 
-    if (!HaveNameProxy())
+    if (!HaveNameProxy()){
+        LogPrintf("dbg: !HaveNameProxy()\n");
         return false;
+    }
+
+    LogPrintf("dbg: return ConnectThroughProxy()\n");
     return ConnectThroughProxy(nameProxy, strDest, port, hSocketRet, nTimeout, outProxyConnectionFailed);
 }
 

@@ -2219,7 +2219,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>잠금 XAP 또는 Masternode collaterals. 이들은 zXAP minting에서 제외됩니다.</translation>
     </message>
     <message>

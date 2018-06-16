@@ -2210,7 +2210,7 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Gesperrte XAP oder Masternode Pfand. Diese sind vom zXAP Prägen ausgeschlossen.</translation>
     </message>
     <message>

@@ -2219,7 +2219,7 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Vergrendelde XAP of Masternode onderpanden. Deze zijn uitgesloten van de zXAP muntage.</translation>
     </message>
     <message>

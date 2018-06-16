@@ -2150,7 +2150,7 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Kilitli XAP veya Masternode teminatları. Bunlar zXAP matlaştırmadan çıkarılır.</translation>
     </message>
     <message>

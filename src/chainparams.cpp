@@ -52,7 +52,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x000009bbd23349b79b3aec682889a0357157d52004bed27b27a78b06dc354dc7"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1528662766, // * UNIX timestamp of last checkpoint block
@@ -112,32 +112,32 @@ public:
         pchMessageStart[2] = 0xeb;
         pchMessageStart[3] = 0xfd;
         vAlertPubKey = ParseHex("042a44ffd3dda7dcf963ee1a1f3a0ad2983f3b3192f4e5c21d7c0b4e205ff4f346164ea027506583ee8dd638908336d246403dbf08724fe83ba6f2422d477245d9");
-        nDefaultPort = 12116;
-        bnProofOfWorkLimit = ~uint256(0) >> 9; // Apollon starting difficulty is 1 / 2^12
+        nDefaultPort = 12218;
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Apollon starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Apollon: 1 day
+        nTargetTimespan = 45 * 60; // Apollon: 45 min spacing
         nTargetSpacing = 1 * 90;  // Apollon: 90 sec
-        nMaturity = 100;
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         // nModifierUpdateBlock = 615800; // removed
-        nZerocoinStartHeight = 2147483647; // too interwoven in the codebase for now.. just set it to int.max
-        nZerocoinStartTime = 2147483647; // too interwoven in the codebase for now.. let's fix it with the other year 2038 problems
-        nBlockEnforceSerialRange = 2147483647; // same as above
-        nBlockRecalculateAccumulators = 2147483647; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 2147483647; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 2147483647; //Last valid accumulator checkpoint
+        nZerocoinStartHeight = 2147483646; // too interwoven in the codebase for now.. just set it to int.max
+        nZerocoinStartTime = 2147483646; // too interwoven in the codebase for now.. let's fix it with the other year 2038 problems
+        nBlockEnforceSerialRange = 2147483646; // same as above
+        nBlockRecalculateAccumulators = 2147483646; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 2147483646; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 2147483646; //Last valid accumulator checkpoint
         // nBlockEnforceInvalidUTXO = 902850; // removed
         // nInvalidAmountFiltered = 268200*COIN; // removed
-        nBlockZerocoinV2 = 2147483647; // too interwoven in the codebase for now.. just set it to int.max
+        nBlockZerocoinV2 = 2147483646; // too interwoven in the codebase for now.. just set it to int.max
         // nEnforceNewSporkKey = 1525158000; // removed
         // nRejectOldSporkKey = 1527811200; // removed
 
@@ -152,7 +152,7 @@ public:
          *   vMerkleTree: e0028e
          */
 
-        const char* pszTimestamp = "June 10th 2018 marks the rebirth of Apollon";
+        const char* pszTimestamp = "Czech President Milos Zeman called a press conference on Thursday to set a giant pair of red underpants on fire. June 15th 2018, BBC News";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -163,12 +163,14 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1528841879;
+        genesis.nTime = 1529161640 ;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1481958;
+        genesis.nNonce = 1000000;
 
+        // don't get your hopes up - will be changed ;-) 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000009bbd23349b79b3aec682889a0357157d52004bed27b27a78b06dc354dc7"));
+        printf("gen: %d\n", hashGenesisBlock.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0x000002faeb786768da1ddd55e19786bcc723868c0846e69e29a438e32ebae9a3"));
         assert(genesis.hashMerkleRoot == uint256("0xc6919d7f29bf9ca604a54edf5b9ec64d65852c80ff8526c9f9e65d4d6ab56a6e"));
 
         vSeeds.push_back(CDNSSeedData("apollon.one", "seed.apollon.one"));     // Primary DNS Seeder 
@@ -186,12 +188,12 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
-        fAllowMinDifficultyBlocks = true;
+        fMiningRequiresPeers = true;
+        fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
@@ -246,7 +248,7 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Apollon: 1 day
+        nTargetTimespan = 24 * 60 * 60; // Apollon: 1 day
         nTargetSpacing = 1 * 90;  // Apollon: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
@@ -270,6 +272,7 @@ public:
         genesis.nNonce = 2402015;
 
         hashGenesisBlock = genesis.GetHash();
+        printf("testgen: %d\n", hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x83353dd6cf0b4b5335cdd5d0369d897a8d41530af33b833c2f5c3440b6af908a"));
 
         vFixedSeeds.clear();
@@ -341,6 +344,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
+        printf("regtest: %d\n", hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x01fabdb2a6070546b8d35c9781dea901cf1f3df5e647e15d784840eb5c439eb6"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.

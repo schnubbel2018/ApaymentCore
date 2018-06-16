@@ -2219,7 +2219,7 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Zaključani XAP ili Masternode kolateral. Oni su isključeni iz zXAP kovanja.</translation>
     </message>
     <message>

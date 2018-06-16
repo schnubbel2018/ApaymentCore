@@ -2207,7 +2207,7 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Låste XAP eller Masternode collaterals. Disse er udelukket fra zXAP-mintning.</translation>
     </message>
     <message>

@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/apollon-project/apollon-detached-sigs.git"
+- "url": "https://github.com/PIVX-Project/pivx-detached-sigs"
   "dir": "signature"
 files:
 - "apollon-osx-unsigned.tar.gz"

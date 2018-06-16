@@ -2118,7 +2118,7 @@ Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</tran
         <translation>Spenderbart:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Låsta XAP eller huvudnod säkerheter. Dessa är uteslutna från zXAP minting.</translation>
     </message>
     <message>

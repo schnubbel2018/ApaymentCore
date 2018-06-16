@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/apollon-project/apollon
+url=https://github.com/ApollonMax/PIVX
 proc=2
 mem=2000
 lxc=true
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/apollon-project/apollon
+-u|--url	Specify the URL of the repository. Default is https://github.com/ApollonMax/PIVX
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/apollon-project/gitian.sigs.git
-    git clone https://github.com/apollon-project/apollon-detached-sigs.git
+    git clone https://github.com/PIVX-Project/gitian.sigs.git
+    git clone https://github.com/PIVX-Project/pivx-detached-sigs
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./apollon
+pushd ./ApollonCore
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./apollon-binaries/${VERSION}
+	mkdir -p ./ApollonCore-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../apollon/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../ApollonCore/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]

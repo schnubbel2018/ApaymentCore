@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/apollon-project/apollon.git"
+- "url": "https://github.com/ApollonMax/PIVX.git"
   "dir": "apollon"
 files: []
 script: |

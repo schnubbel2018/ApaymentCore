@@ -2033,7 +2033,7 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Užrakinti XAP arba Masternode užstatai. Jie yra neįtraukti į zXAP kalimą.</translation>
     </message>
     <message>

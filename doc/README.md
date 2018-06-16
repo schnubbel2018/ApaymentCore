@@ -3,7 +3,7 @@ Apollon Core
 
 Setup
 ---------------------
-[Apollon Core](http://apollon.org/wallet) is the original Apollon client and it builds the backbone of the network. However, it downloads and stores the entire history of Apollon transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Apollon Core](http://apollon.one/wallet) is the original Apollon client and it builds the backbone of the network. However, it downloads and stores the entire history of Apollon transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,9 +28,9 @@ Drag Apollon-Qt to your applications folder, and then run Apollon-Qt.
 
 * See the documentation at the [Apollon Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Apollon Forum](http://forum.apollon.org/).
-* Join our Discord server [Discord Server](https://discord.apollon.org)
-* Join one of our Slack groups [Apollon Slack Groups](https://apollon.org/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Apollon Forum](http://forum.apollon.one/).
+* Join our Discord server [Discord Server](https://discord.apollon.one)
+* Join one of our Slack groups [Apollon Slack Groups](https://apollon.one/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
@@ -56,7 +56,7 @@ The Xapx repo's [root README](https://github.com/Apollon-Project/Apollon/blob/ma
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Apollon](http://forum.apollon.org/) forum.
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Apollon](http://forum.apollon.one/) forum.
 * Join the [Apollon-Dev](https://apollon-dev.slack.com/) Slack group ([Sign-Up](https://apollon-dev.herokuapp.com/)).
 
 ### Miscellaneous

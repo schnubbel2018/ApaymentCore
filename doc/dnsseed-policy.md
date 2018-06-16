@@ -46,7 +46,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Apollon
 Core development team as well as posting on the
-[Apollon Forum](https://forum.apollon.org).
+[Apollon Forum](https://forum.apollon.one).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

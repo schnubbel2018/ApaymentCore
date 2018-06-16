@@ -2203,7 +2203,7 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</source>
+        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
         <translation>Заключен XAP или допълнителни гаранции в Главни Възли. Тези не са включени в zXAP емитирането.</translation>
     </message>
     <message>

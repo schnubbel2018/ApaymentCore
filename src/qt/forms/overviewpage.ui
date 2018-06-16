@@ -496,7 +496,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</string>
+                          <string>Locked XAP or Masternode collaterals. These are excluded from staking.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -515,7 +515,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked XAP or Masternode collaterals. These are excluded from zXAP minting.</string>
+                          <string>Locked XAP or Masternode collaterals. These are excluded from staking.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 XAP</string>

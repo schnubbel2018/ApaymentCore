@@ -4,11 +4,11 @@ Apollon Core integration/staging repository
 [![Build Status](https://travis-ci.org/Apollon-Project/Apollon.svg?branch=master)](https://travis-ci.org/Apollon-Project/Apollon) [![GitHub version](https://badge.fury.io/gh/Apollon-Project%2FApollon.svg)](https://badge.fury.io/gh/Apollon-Project%2FApollon)
 
 Apollon is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of Apollon is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions using the [_Zerocoin Protocol_](http://www.apollon.org/zxap).
+- Anonymized transactions using the [_Zerocoin Protocol_](http://www.apollon.one/zxap).
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [apollon.org](http://www.apollon.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+More information at [apollon.one](http://www.apollon.one) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
 ### Coin Specs
 <table>

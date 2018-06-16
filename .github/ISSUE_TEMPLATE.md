@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to Apollon Core.
-General Apollon questions and/or support requests and are best directed to the [Apollon Discord](https://discord.apollon.org).
+General Apollon questions and/or support requests and are best directed to the [Apollon Discord](https://discord.apollon.one).
 
 ### Describe the issue
 
