@@ -152,7 +152,7 @@ public:
          *   vMerkleTree: e0028e
          */
 
-        const char* pszTimestamp = "Czech President Milos Zeman called a press conference on Thursday to set a giant pair of red underpants on fire. June 15th 2018, BBC News";
+        const char* pszTimestamp = "CIA Neither Confirms nor Denies Knowledge of True Identity of Satoshi Nakamoto. June 16th 2018, Cointelegraph";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -163,15 +163,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1529161640 ;
+        genesis.nTime = 1529228426;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1000000;
-
-        // don't get your hopes up - will be changed ;-) 
+        genesis.nNonce = 1233835;
+	
         hashGenesisBlock = genesis.GetHash();
-        printf("gen: %d\n", hashGenesisBlock.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x000002faeb786768da1ddd55e19786bcc723868c0846e69e29a438e32ebae9a3"));
-        assert(genesis.hashMerkleRoot == uint256("0xc6919d7f29bf9ca604a54edf5b9ec64d65852c80ff8526c9f9e65d4d6ab56a6e"));
+        assert(hashGenesisBlock == uint256("0x00000a0e5cfebfd4c7964b91eb077ae5733745ce3ae5d1775c3e6c660a360653"));
+        assert(genesis.hashMerkleRoot == uint256("0x54035970cf6c65b614ef76dd55da5b0b13b7f24d5faf0d78a87b57134ba35047"));
 
         vSeeds.push_back(CDNSSeedData("apollon.one", "seed.apollon.one"));     // Primary DNS Seeder 
         vSeeds.push_back(CDNSSeedData("0", "52.32.174.206"));
@@ -272,8 +270,7 @@ public:
         genesis.nNonce = 2402015;
 
         hashGenesisBlock = genesis.GetHash();
-        printf("testgen: %d\n", hashGenesisBlock.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x83353dd6cf0b4b5335cdd5d0369d897a8d41530af33b833c2f5c3440b6af908a"));
+        assert(hashGenesisBlock == uint256("0xf2f5426ec68302cdcea44734b259551d309f43186027e9d2f381425251c9e31a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -344,8 +341,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        printf("regtest: %d\n", hashGenesisBlock.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x01fabdb2a6070546b8d35c9781dea901cf1f3df5e647e15d784840eb5c439eb6"));
+        assert(hashGenesisBlock == uint256("0x0fa2221f80d934221a5529da733586ffbc90b3048a0fb7e3a748b4cc6d83ba14"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
