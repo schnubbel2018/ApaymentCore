@@ -12,10 +12,10 @@ AC_CONFIG_HEADERS([src/config/apollon-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=Apollond
-BITCOIN_GUI_NAME=Apollon-Qt
-BITCOIN_CLI_NAME=Apollon-cli
-BITCOIN_TX_NAME=Apollon-tx
+BITCOIN_DAEMON_NAME=apollond
+BITCOIN_GUI_NAME=apollon-qt
+BITCOIN_CLI_NAME=apollon-cli
+BITCOIN_TX_NAME=apollon-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

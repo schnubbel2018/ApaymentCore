@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Apollon"
-            VALUE "FileDescription",    "apollond (OSS daemon/client for Apollon)"
+            VALUE "FileDescription",    "ApollonCored (OSS daemon/client for Apollon)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "apollond"
+            VALUE "InternalName",       "ApollonCored"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "apollond.exe"
-            VALUE "ProductName",        "apollond"
+            VALUE "OriginalFilename",   "ApollonCored.exe"
+            VALUE "ProductName",        "ApollonCored"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
