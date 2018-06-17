@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2017 The Apollon developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifdef HAVE_CONFIG_H
-#include "config/pivx-config.h"
+#include "config/apollon-config.h"
 #endif
 
 #include "netbase.h"
@@ -613,6 +613,8 @@ bool ConnectSocket(const CService &addrDest, SOCKET& hSocketRet, int nTimeout, b
 
 bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest, int portDefault, int nTimeout, bool* outProxyConnectionFailed)
 {
+    LogPrintf("dbg: ConnectSocketByName\n");
+    
     string strDest;
     int port = portDefault;
 
@@ -620,6 +622,7 @@ bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest
         *outProxyConnectionFailed = false;
 
     SplitHostPort(string(pszDest), port, strDest);
+    LogPrintf("dbg: SplitHostPort strDest: %s, port: %d\n", strDest, port);
 
     proxyType nameProxy;
     GetNameProxy(nameProxy);
@@ -627,13 +630,18 @@ bool ConnectSocketByName(CService& addr, SOCKET& hSocketRet, const char* pszDest
     CService addrResolved(CNetAddr(strDest, fNameLookup && !HaveNameProxy()), port);
     if (addrResolved.IsValid()) {
         addr = addrResolved;
+        LogPrintf("dbg: return ConnectSocket\n");
         return ConnectSocket(addr, hSocketRet, nTimeout);
     }
 
     addr = CService("0.0.0.0:0");
 
-    if (!HaveNameProxy())
+    if (!HaveNameProxy()){
+        LogPrintf("dbg: !HaveNameProxy()\n");
         return false;
+    }
+
+    LogPrintf("dbg: return ConnectThroughProxy()\n");
     return ConnectThroughProxy(nameProxy, strDest, port, hSocketRet, nTimeout, outProxyConnectionFailed);
 }
 

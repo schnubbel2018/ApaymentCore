@@ -161,7 +161,7 @@ void PrivacyDialog::on_pushButtonMintzPIV_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zPIV is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("Zerocoin transactions are not supported by Apollon."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -272,7 +272,7 @@ void PrivacyDialog::on_pushButtonSpendzPIV_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zPIV is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("Zerocoin transactions are not supported by Apollon."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
@@ -796,11 +796,11 @@ void PrivacyDialog::updateSPORK16Status()
     if (fMaintenanceMode && fButtonsEnabled) {
         // Mint zPIV
         ui->pushButtonMintzPIV->setEnabled(false);
-        ui->pushButtonMintzPIV->setToolTip(tr("zPIV is currently disabled due to maintenance."));
+        ui->pushButtonMintzPIV->setToolTip(tr("Zerocoin transactions are not supported by Apollon."));
 
         // Spend zPIV
         ui->pushButtonSpendzPIV->setEnabled(false);
-        ui->pushButtonSpendzPIV->setToolTip(tr("zPIV is currently disabled due to maintenance."));
+        ui->pushButtonSpendzPIV->setToolTip(tr("Zerocoin transactions are not supported by Apollon."));
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
         // Mint zPIV
         ui->pushButtonMintzPIV->setEnabled(true);
