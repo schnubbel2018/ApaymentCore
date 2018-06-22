@@ -191,29 +191,31 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         LogPrint("masternode","IsBlockValueValid() : WARNING: Couldn't find previous block\n");
     }
 
-    //LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
+  //LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
+
+    CAmount nMaxMintValue = GetBlockValue(nHeight);
+    int stuckBlockHeight = 7000;
 
     if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything
         //super blocks will always be on these blocks, max 100 per budgeting
         if (nHeight % GetBudgetPaymentCycleBlocks() < 100) {
             return true;
         } else {
-            if (nMinted > nExpectedValue) {
+            if ((nMinted > nExpectedValue && (nHeight != stuckBlockHeight)) || ((nHeight == stuckBlockHeight) && (nMinted > nMaxMintValue))) {
                 return false;
             }
         }
     } else { // we're synced and have data so check the budget schedule
-
         //are these blocks even enabled
         if (!IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS)) {
-            return nMinted <= nExpectedValue;
+            return nMinted <= nExpectedValue || ((nHeight == stuckBlockHeight) && (nMinted <= nMaxMintValue));
         }
 
         if (budget.IsBudgetPaymentBlock(nHeight)) {
             //the value of the block is evaluated in CheckBlock
             return true;
         } else {
-            if (nMinted > nExpectedValue) {
+            if ((nMinted > nExpectedValue && (nHeight != stuckBlockHeight)) || ((nHeight == stuckBlockHeight) && (nMinted > nMaxMintValue))) {
                 return false;
             }
         }
@@ -340,10 +342,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
-    } else {
-		if (!fProofOfStake)
-			txNew.vout[0].nValue = blockValue;
-	}
+    }
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()
