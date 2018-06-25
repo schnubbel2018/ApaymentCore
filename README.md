@@ -1,12 +1,12 @@
 Apollon
 =====================================
 
-Apollon is a PoS-based cryptocurrency.
+Apollon is a PoS-based cryptocurrency based on [PIVX](https://github.com/PIVX-Project/PIVX).
 
 More information at 
-[apollon.one](http://www.apollon.one) 
-[Discord](https://discordapp.com/invite/t3ZwaSW)
-[BitcoinTalk](https://bitcointalk.org/index.php?topic=3058895.0)
+[apollon.one](http://www.apollon.one)  
+[Discord](https://discordapp.com/invite/t3ZwaSW)  
+[BitcoinTalk](https://bitcointalk.org/index.php?topic=3058895.0)  
 
 ### Coin Specs
 <table>
@@ -20,7 +20,7 @@ More information at
 ### PoS Rewards Breakdown
 
 <table>
-<th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
+<th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th>
 <tr><td>10-7,000</td><td>1 XAP</td><td>80% (0.8 XAP)</td><td>20% (0.2 XAP)</td></tr>
 <tr><td>7,001-9,000</td><td>640 XAP</td><td>80% (512 XAP)</td><td>20% (128 XAP)</td></tr>
 <tr><td>9,001-50,000</td><td>320 XAP</td><td>80% (256 XAP)</td><td>20% (64 XAP)</td></tr>
