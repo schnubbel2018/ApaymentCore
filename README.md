@@ -13,8 +13,8 @@ More information at
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>90 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>250,000,000 XAP</td></tr>
+<tr><td>Max Coin Supply</td><td>250,000,000 XAP</td></tr>
+<tr><td>Premine</td><td>9,000,000 XAP (originally), 94,000,000 (coinswap - redistributed)</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
