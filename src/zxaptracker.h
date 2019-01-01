@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Apollon_ZXAPTRACKER_H
-#define Apollon_ZXAPTRACKER_H
+#ifndef Apayment_ZAPMTRACKER_H
+#define Apayment_ZAPMTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
 
 class CDeterministicMint;
 
-class CzXAPTracker
+class CzAPMTracker
 {
 private:
     bool fInitialized;
@@ -48,4 +48,4 @@ public:
     void Clear();
 };
 
-#endif //Apollon_ZXAPTRACKER_H
+#endif //Apayment_ZAPMTRACKER_H
