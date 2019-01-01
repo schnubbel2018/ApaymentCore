@@ -6,16 +6,16 @@ define(_CLIENT_VERSION_REVISION, 1)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([Xapx Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.apollon.one],[apollon])
+AC_INIT([Apmx Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.1apayment.com],[apayment])
 AC_CONFIG_SRCDIR([src/main.cpp])
-AC_CONFIG_HEADERS([src/config/apollon-config.h])
+AC_CONFIG_HEADERS([src/config/apayment-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=apollond
-BITCOIN_GUI_NAME=apollon-qt
-BITCOIN_CLI_NAME=apollon-cli
-BITCOIN_TX_NAME=apollon-tx
+BITCOIN_DAEMON_NAME=apaymentd
+BITCOIN_GUI_NAME=apayment-qt
+BITCOIN_CLI_NAME=apayment-cli
+BITCOIN_TX_NAME=apayment-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -25,9 +25,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef XAP_CONFIG_H])
-AH_TOP([#define XAP_CONFIG_H])
-AH_BOTTOM([#endif //XAP_CONFIG_H])
+AH_TOP([#ifndef APM_CONFIG_H])
+AH_TOP([#define APM_CONFIG_H])
+AH_BOTTOM([#endif //APM_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME
@@ -249,7 +249,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build apollond daemon (default=yes)])],
+  [build apaymentd daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -955,7 +955,7 @@ AC_MSG_CHECKING([whether to build apollond])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (apollon-cli apollon-tx)])
+AC_MSG_CHECKING([whether to build utils (apayment-cli apayment-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
