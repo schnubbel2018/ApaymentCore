@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/apollon-config.h"
+#include "config/apayment-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -254,7 +254,7 @@ private:
     void startThread();
 };
 
-#include "apollon.moc"
+#include "apayment.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -589,7 +589,7 @@ int main(int argc, char* argv[])
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
     } catch (std::exception& e) {
-        QMessageBox::critical(0, QObject::tr("Apollon Core"),
+        QMessageBox::critical(0, QObject::tr("Apayment Core"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return 0;
     }
