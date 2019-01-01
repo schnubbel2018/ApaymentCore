@@ -1,0 +1,35 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/apayment_bg.qm</file>
+        <file alias="ca">locale/apayment_ca.qm</file>
+        <file alias="cs">locale/apayment_cs.qm</file>
+        <file alias="da">locale/apayment_da.qm</file>
+        <file alias="de">locale/apayment_de.qm</file>
+        <file alias="en">locale/apayment_en.qm</file>
+        <file alias="en_US">locale/apayment_en_US.qm</file>
+        <file alias="es">locale/apayment_es.qm</file>
+        <file alias="es_ES">locale/apayment_es_ES.qm</file>
+        <file alias="fi">locale/apayment_fi.qm</file>
+        <file alias="fr_FR">locale/apayment_fr_FR.qm</file>
+        <file alias="hi_IN">locale/apayment_hi_IN.qm</file>
+        <file alias="hr">locale/apayment_hr.qm</file>
+        <file alias="hr_HR">locale/apayment_hr_HR.qm</file>
+        <file alias="it">locale/apayment_it.qm</file>
+        <file alias="ja">locale/apayment_ja.qm</file>
+        <file alias="ko_KR">locale/apayment_ko_KR.qm</file>
+        <file alias="lt_LT">locale/apayment_lt_LT.qm</file>
+        <file alias="nl">locale/apayment_nl.qm</file>
+        <file alias="pl">locale/apayment_pl.qm</file>
+        <file alias="pt">locale/apayment_pt.qm</file>
+        <file alias="pt_BR">locale/apayment_pt_BR.qm</file>
+        <file alias="ro_RO">locale/apayment_ro_RO.qm</file>
+        <file alias="ru">locale/apayment_ru.qm</file>
+        <file alias="sk">locale/apayment_sk.qm</file>
+        <file alias="sv">locale/apayment_sv.qm</file>
+        <file alias="tr">locale/apayment_tr.qm</file>
+        <file alias="uk">locale/apayment_uk.qm</file>
+        <file alias="vi">locale/apayment_vi.qm</file>
+        <file alias="zh_CN">locale/apayment_zh_CN.qm</file>
+        <file alias="zh_TW">locale/apayment_zh_TW.qm</file>
+    </qresource>
+</RCC>
