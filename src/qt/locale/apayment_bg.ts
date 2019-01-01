@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your Apollon addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите Apollon адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your Apayment addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите Apayment адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Apollon addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Apollon адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your Apayment addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите Apayment адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Apollon will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XAPs from being stolen by malware infecting your computer.</source>
-        <translation>Apollon сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Apollon от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Apayment will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APMs from being stolen by malware infecting your computer.</source>
+        <translation>Apayment сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Apayment от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XAP&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ XAP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APM&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ APM&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Enter a Apollon Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Xapx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
+        <source>Enter a Apayment Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете APMx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
     </message>
     <message>
-        <source>The Apollon address to encrypt</source>
-        <translation>Apollon Адреса за криптиране</translation>
+        <source>The Apayment address to encrypt</source>
+        <translation>Apayment Адреса за криптиране</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this Apollon address</source>
-        <translation>Криптирай тайния ключ за този Apollon адрес</translation>
+        <source>Encrypt the private key for this Apayment address</source>
+        <translation>Криптирай тайния ключ за този Apayment адрес</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>История на транзакциите</translation>
     </message>
     <message>
-        <source>Privacy Actions for zXAP</source>
-        <translation>Поверителни Действия за ZXAP</translation>
+        <source>Privacy Actions for zAPM</source>
+        <translation>Поверителни Действия за ZAPM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Ядро</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a Apollon address</source>
-        <translation>Изпратете монети до Apollon адрес</translation>
+        <source>Send coins to a Apayment address</source>
+        <translation>Изпратете монети до Apayment адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and apollon: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  Apollon:URI)</translation>
+        <source>Request payments (generates QR codes and apayment: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  Apayment:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Apollon Core</source>
-        <translation>&amp;Относно Apollon Ядрото</translation>
+        <source>&amp;About Apayment Core</source>
+        <translation>&amp;Относно Apayment Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Apollon Core</source>
-        <translation>Информациза за Apollon Ядрото</translation>
+        <source>Show information about Apayment Core</source>
+        <translation>Информациза за Apayment Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for Apollon</source>
-        <translation>Промени Apollon конфигурацията</translation>
+        <source>Modify configuration options for Apayment</source>
+        <translation>Промени Apayment конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your Apollon addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте Apollon адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your Apayment addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте Apayment адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Apollon addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Apollon адреси</translation>
+        <source>Verify messages to ensure they were signed with specified Apayment addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Apayment адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a Apollon: URI or payment request</source>
-        <translation>Отвори Apollon:URI платежно нареждане</translation>
+        <source>Open a Apayment: URI or payment request</source>
+        <translation>Отвори Apayment:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Apollon Core help message to get a list with possible Apollon command-line options</source>
-        <translation>Разкрийте Помощ за Apollon Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the Apayment Core help message to get a list with possible Apayment command-line options</source>
+        <translation>Разкрийте Помощ за Apayment Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Apollon Core client</source>
-        <translation>Клиент Apollon Ядро</translation>
+        <source>Apayment Core client</source>
+        <translation>Клиент Apayment Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Apollon network</source>
-        <translation><numerusform> %n активни свръзки към Apollon мрежата </numerusform><numerusform>%n активни свръзка(и) към Apollon мрежата </numerusform></translation>
+        <source>%n active connection(s) to Apayment network</source>
+        <translation><numerusform> %n активни свръзки към Apayment мрежата </numerusform><numerusform>%n активни свръзка(и) към Apayment мрежата </numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (apollon.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (apollon.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (apayment.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (apayment.conf).</translation>
     </message>
 </context>
 <context>
@@ -1126,8 +1126,8 @@ Address: %4
         <translation>Етикета става червен, когато получателя ще получи сума по-малка от %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uxap per input.</source>
-        <translation>Може да има разлика от +/- %1 uxap на вх.</translation>
+        <source>Can vary +/- %1 uAPM per input.</source>
+        <translation>Може да има разлика от +/- %1 uAPM на вх.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1181,8 +1181,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Apollon address.</source>
-        <translation>Зададения адрес "%1"не е валиден Apollon адрес.</translation>
+        <source>The entered address "%1" is not a valid Apayment address.</source>
+        <translation>Зададения адрес "%1"не е валиден Apayment адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1227,16 +1227,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Ядро</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Apollon Core</source>
-        <translation>Относно Apollon Ядрото</translation>
+        <source>About Apayment Core</source>
+        <translation>Относно Apayment Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1282,16 +1282,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Apollon Core.</source>
-        <translation>Добре Дошли в Apollon Ядрото</translation>
+        <source>Welcome to Apayment Core.</source>
+        <translation>Добре Дошли в Apayment Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Apollon Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Apollon Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where Apayment Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Apayment Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Apollon Core will download and store a copy of the Apollon block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Apollon Ядрото ще изтегли и запише копие на целия Apollon блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>Apayment Core will download and store a copy of the Apayment block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Apayment Ядрото ще изтегли и запише копие на целия Apayment блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1302,8 +1302,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Ядро</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1444,12 +1444,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Apollon addresses after it matures.
-To Add: enter percentage to give and Apollon address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Apayment addresses after it matures.
+To Add: enter percentage to give and Apayment address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Apollon адреси.
-Да Добавите: въведете процент и задайте Apollon адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Apayment адреси.
+Да Добавите: въведете процент и задайте Apayment адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1677,8 +1677,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send XAP to</source>
-        <translation>Добави получател на XAP</translation>
+        <source>Add destinations to send APM to</source>
+        <translation>Добави получател на APM</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1776,47 +1776,47 @@ Please be patient after clicking import.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XAP</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 XAP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 APM</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 APM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XAP</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 XAP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 50000 APM</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 50000 APM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XAP to anonymize 10000 XAP</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 XAP за да скриете 10000 XAP</translation>
+        <source>This option is the quickest and will cost about ~0.025 APM to anonymize 10000 APM</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 APM за да скриете 10000 APM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XAP to anonymize 10000 XAP</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 XAP за да скриете 10000 XAP</translation>
+        <source>This option is moderately fast and will cost about 0.05 APM to anonymize 10000 APM</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 APM за да скриете 10000 APM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на XAP. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на APM. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 XAP per 10000 XAP you anonymize.</source>
-        <translation>0.1 XAP за 10000 скрити XAP</translation>
+        <source>0.1 APM per 10000 APM you anonymize.</source>
+        <translation>0.1 APM за 10000 скрити APM</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Apollon's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Apayment's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Apollon's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Apayment's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Apollon's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Apayment's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1878,8 +1878,8 @@ Please be patient after clicking import.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the Apollon client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори Apollon порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the Apayment client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори Apayment порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1898,12 +1898,12 @@ Please be patient after clicking import.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start Apollon after logging in to the system.</source>
-        <translation>Стартирай Apollon автоматично след влизане в системата.</translation>
+        <source>Automatically start Apayment after logging in to the system.</source>
+        <translation>Стартирай Apayment автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Apollon on system login</source>
-        <translation>&amp;Стартирай Apollon заедно с операционната система</translation>
+        <source>&amp;Start Apayment on system login</source>
+        <translation>&amp;Стартирай Apayment заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1930,50 +1930,50 @@ Please be patient after clicking import.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Apollon.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Apayment.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/apollon-project/apollon-project-translations</source>
+https://www.transifex.com/apayment-project/apayment-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/apollon-project/apollon-project-translations</translation>
+https://www.transifex.com/apayment-project/apayment-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of XAP units to zXAP</source>
-        <translation>Включи автоматичното емитиране на XAP единици в zXAP</translation>
+        <source>Enable automatic minting of APM units to zAPM</source>
+        <translation>Включи автоматичното емитиране на APM единици в zAPM</translation>
     </message>
     <message>
-        <source>Enable zXAP Automint</source>
-        <translation>Включи Автоматично емитиране на zXAP</translation>
+        <source>Enable zAPM Automint</source>
+        <translation>Включи Автоматично емитиране на zAPM</translation>
     </message>
     <message>
-        <source>Percentage of incoming XAP which get automatically converted to zXAP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите XAP, който автоматично да се конвертира в zXAP посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming APM which get automatically converted to zAPM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите APM, който автоматично да се конвертира в zAPM посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zXAP</source>
-        <translation>Процент автоматично сечени zXAP</translation>
+        <source>Percentage of autominted zAPM</source>
+        <translation>Процент автоматично сечени zAPM</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough XAP for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zXAP докато не се съберат достатъчно XAP за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough APM for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zAPM докато не се съберат достатъчно APM за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zXAP Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zXAP</translation>
+        <source>Preferred Automint zAPM Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zAPM</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Праг на споделеното съхранение:</translation>
     </message>
     <message>
-        <source>Connect to the Apollon network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с Apollon мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the Apayment network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с Apayment мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>XAP Balance</source>
-        <translation>XAP Наличности</translation>
+        <source>APM Balance</source>
+        <translation>APM Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2151,16 +2151,16 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Сегашния баланс по портфейли в режим на наблюдение само</translation>
     </message>
     <message>
-        <source>Your current Apollon balance, unconfirmed and immature transactions included</source>
-        <translation>Вашите Apollon наличности, включително непотвърдените и неузрели преводи</translation>
+        <source>Your current Apayment balance, unconfirmed and immature transactions included</source>
+        <translation>Вашите Apayment наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
-        <source>zXAP Balance</source>
-        <translation>zXAP Наличности</translation>
+        <source>zAPM Balance</source>
+        <translation>zAPM Наличности</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Apollon network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Apollon мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Apayment network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Apayment мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2203,8 +2203,8 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked XAP or Masternode collaterals. These are excluded from staking.</source>
-        <translation>Заключен XAP или допълнителни гаранции в Главни Възли. Тези не са включени в zXAP емитирането.</translation>
+        <source>Locked APM or Masternode collaterals. These are excluded from staking.</source>
+        <translation>Заключен APM или допълнителни гаранции в Главни Възли. Тези не са включени в zAPM емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2215,8 +2215,8 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>Непотвърден</translation>
     </message>
     <message>
-        <source>Your current zXAP balance, unconfirmed and immature zXAP included.</source>
-        <translation>Вашите zXAP наличности, включеително непотвърдените и неузрелите zXAP.</translation>
+        <source>Your current zAPM balance, unconfirmed and immature zAPM included.</source>
+        <translation>Вашите zAPM наличности, включеително непотвърдените и неузрелите zAPM.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2231,14 +2231,14 @@ https://www.transifex.com/apollon-project/apollon-project-translations</translat
         <translation>АвтоЕмисията е включена и настроена на</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in apollon.conf.</source>
-        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в apollon.conf файла.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in apayment.conf.</source>
+        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в apayment.conf файла.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apayment.conf</source>
         <translation>АвтоЕмисия е изключено.
-За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в apollon.conf файла.</translation>
+За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в apayment.conf файла.</translation>
     </message>
 </context>
 <context>
@@ -2264,12 +2264,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.co
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start apollon: click-to-pay handler</source>
-        <translation>Провал при стартирането на apollon: click-to-pay обработвател</translation>
+        <source>Cannot start apayment: click-to-pay handler</source>
+        <translation>Провал при стартирането на apayment: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Apollon address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Apollon адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Apayment address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден Apayment адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2354,8 +2354,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.co
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Apollon network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Apollon мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Apayment network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Apayment мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2366,8 +2366,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.co
         <translation>0</translation>
     </message>
     <message>
-        <source>zXAP</source>
-        <translation>zXAP</translation>
+        <source>zAPM</source>
+        <translation>zAPM</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2378,8 +2378,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.co
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 XAP</source>
-        <translation>0.000 000 00 XAP</translation>
+        <source>0.000 000 00 APM</source>
+        <translation>0.000 000 00 APM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2430,24 +2430,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.co
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zXAP for spending</source>
-        <translation>Налични (узрели и готови за харчене) zXAP за употреба</translation>
+        <source>Available (mature and spendable) zAPM for spending</source>
+        <translation>Налични (узрели и готови за харчене) zAPM за употреба</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zXAP for spending
+        <source>Available (mature and spendable) zAPM for spending
 
-zXAP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Налични (узрели и готови за харчене) zXAP за употреба
+zAPM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Налични (узрели и готови за харчене) zAPM за употреба
 
-zXAP са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
+zAPM са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>0 zXAP</source>
-        <translation>0 zXAP</translation>
+        <source>0 zAPM</source>
+        <translation>0 zAPM</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2466,7 +2466,7 @@ zXAP са узрели, тогава когато имат повече от 20 
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Apollon address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Apayment address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2499,7 +2499,7 @@ zXAP са узрели, тогава когато имат повече от 20 
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zXAP от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zAPM от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2518,8 +2518,8 @@ zXAP са узрели, тогава когато имат повече от 20 
         <translation>Zerocoin статистика:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zXAP</source>
-        <translation>Обща Наличност включеително непотвърдените и неузрели zXAP</translation>
+        <source>Total Balance including unconfirmed and immature zAPM</source>
+        <translation>Обща Наличност включеително непотвърдените и неузрели zAPM</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2534,24 +2534,24 @@ zXAP са узрели, тогава когато имат повече от 20 
         <translation>Деном. със стойност 1:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zXAP minting.
+        <source>Show the current status of automatic zAPM minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to apollon.conf
-- disable: add 'enablezeromint=0' to apollon.conf
+- enable: add 'enablezeromint=1' to apayment.conf
+- disable: add 'enablezeromint=0' to apayment.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zXAP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zAPM
 
 </source>
-        <translation>Покажи състоянието на автоматичното zXAP емитиране.
+        <translation>Покажи състоянието на автоматичното zAPM емитиране.
 
 За да пормените състоянието (изисква рестарт):
-- вклчване: добавете 'enablezeromint=1' в apollon.conf
-- изключване: добавете 'enablezeromint=0' в apollon.conf
+- вклчване: добавете 'enablezeromint=1' в apayment.conf
+- изключване: добавете 'enablezeromint=0' в apayment.conf
 
 За промяна в процентите (не изисква рестарт):
-- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zXAP
+- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zAPM
 </translation>
     </message>
     <message>
@@ -2739,12 +2739,12 @@ To change the percentage (no restart required):
         <translation>Конфигуриран целеви процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zXAP is currently disabled due to maintenance.</source>
-        <translation>В момента zXAP не работи поради ремонт.</translation>
+        <source>zAPM is currently disabled due to maintenance.</source>
+        <translation>В момента zAPM не работи поради ремонт.</translation>
     </message>
     <message>
-        <source>zXAP is currently undergoing maintenance.</source>
-        <translation>В момента zXAP е в ремонт.</translation>
+        <source>zAPM is currently undergoing maintenance.</source>
+        <translation>В момента zAPM е в ремонт.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2831,8 +2831,8 @@ To change the percentage (no restart required):
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zXAP in </source>
-        <translation>zXAP в</translation>
+        <source> zAPM in </source>
+        <translation>zAPM в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2865,8 +2865,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Xapx Address</source>
-        <translation>Невалиден Apollon адрес</translation>
+        <source>Invalid APMx Address</source>
+        <translation>Невалиден Apayment адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2964,8 +2964,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Apollon address (e.g. %1)</source>
-        <translation>Задайте Apollon адрес (например %1)</translation>
+        <source>Enter a Apayment address (e.g. %1)</source>
+        <translation>Задайте Apayment адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3102,8 +3102,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Apollon debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори Apollon дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the Apayment debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори Apayment дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3306,8 +3306,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the Apollon RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на Apollon.</translation>
+        <source>Welcome to the Apayment RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на Apayment.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3433,16 +3433,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Apollon network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Apollon мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Apayment network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Apayment мрежата.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ПОЛУЧИ</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Apollon network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Apollon мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Apayment network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Apayment мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3670,8 +3670,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 XAP</source>
-        <translation>0 XAP</translation>
+        <source>0 APM</source>
+        <translation>0 APM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3726,15 +3726,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uXAPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXAPs in fee,&lt;br /&gt;while "at least" pays 1000 uXAPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uXAP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uXAP входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uXAP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uAPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAPMs in fee,&lt;br /&gt;while "at least" pays 1000 uAPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uAPM и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uAPM входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uAPM. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uXAPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXAPs in fee,&lt;br /&gt;while "total at least" pays 1000 uXAPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uXAP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uXAP входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uXAP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uAPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uAPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uAPM и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uAPM входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uAPM. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Apollon transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Apayment transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3782,8 +3782,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized XAP</source>
-        <translation>Анонимизиран XAP</translation>
+        <source>Anonymized APM</source>
+        <translation>Анонимизиран APM</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3830,8 +3830,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Инструмента за разделяне на блока не работи, когато се изпраща до няколко адреса едновременно. Опитайте пак.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Apollon address</source>
-        <translation>Предупреждение: Невалиден XAP адрес</translation>
+        <source>Warning: Invalid Apayment address</source>
+        <translation>Предупреждение: Невалиден APM адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3933,8 +3933,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Apollon address to send the payment to</source>
-        <translation>Apollon адреса - получател на плащането</translation>
+        <source>The Apayment address to send the payment to</source>
+        <translation>Apayment адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3973,8 +3973,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Apollon: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Apollon network.</source>
-        <translation>Съобщение, което е било прикачено към Apollon:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Apollon мрежата.</translation>
+        <source>A message that was attached to the Apayment: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Apayment network.</source>
+        <translation>Съобщение, което е било прикачено към Apayment:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Apayment мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4000,8 +4000,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Apollon Core is shutting down...</source>
-        <translation>Изключване на Apollon Ядрото...</translation>
+        <source>Apayment Core is shutting down...</source>
+        <translation>Изключване на Apayment Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4023,8 +4023,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Apollon address to sign the message with</source>
-        <translation>Apollon адреса, с който да подпишете съобщението</translation>
+        <source>The Apayment address to sign the message with</source>
+        <translation>Apayment адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4055,16 +4055,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Apollon address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Apollon адрес</translation>
+        <source>Sign the message to prove you own this Apayment address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Apayment адрес</translation>
     </message>
     <message>
-        <source>The Apollon address the message was signed with</source>
-        <translation>Apollon адреса, който е подписано съобщението</translation>
+        <source>The Apayment address the message was signed with</source>
+        <translation>Apayment адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Apollon address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Apollon адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Apayment address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Apayment адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4150,8 +4150,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Ядро</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4166,8 +4166,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Apollon Core developers</source>
-        <translation>Apollon Core разработчици</translation>
+        <source>The Apayment Core developers</source>
+        <translation>Apayment Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4577,8 +4577,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сечене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend</source>
-        <translation>Харчене на Zerocoin</translation>
+        <source>APMcoin Spend</source>
+        <translation>APMчене на Zerocoin</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4702,8 +4702,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XAP.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 XAP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 APM.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 APM.</translation>
     </message>
 </context>
 <context>
@@ -4734,7 +4734,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZXapControlDialog</name>
+    <name>ZApmControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Количество</translation>
@@ -4744,8 +4744,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zXAP</source>
-        <translation>zXAP</translation>
+        <source>zAPM</source>
+        <translation>zAPM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4757,7 +4757,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>apollon-core</name>
+    <name>apayment-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = пази мета данните от преводи, например собственик на акаунта и ифнормация за изисквани плащания, 2 = изхръвли мета данните от преводи)</translation>
@@ -4783,8 +4783,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изчисления чекпойнт на акумулатора не е същия като записания в блок индекса.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Apollon Core is probably already running.</source>
-        <translation>Не може да заключи папката с данни %s. Apollon Портфейла вероятно вече е стартиран.</translation>
+        <source>Cannot obtain a lock on data directory %s. Apayment Core is probably already running.</source>
+        <translation>Не може да заключи папката с данни %s. Apayment Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4839,12 +4839,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in XAP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в XAP/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in APM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в APM/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in XAP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в XAP/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in APM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в APM/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4943,20 +4943,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Този продукт включва софтуер разработен от OpenSSL Project &lt;https://www.openssl.org/&gt; и крипто софтуер написан от Ерик Юнг и UPnP софтуер от Томас Бернард.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Apollon Core is probably already running.</source>
-        <translation>Не може да се прикачи към %s на този компютър. Apollon Портфейла вероятно вече е стартиран.</translation>
+        <source>Unable to bind to %s on this computer. Apayment Core is probably already running.</source>
+        <translation>Не може да се прикачи към %s на този компютър. Apayment Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XAP.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 XAP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 APM.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 APM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 XAP.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 XAP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 APM.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 APM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4971,8 +4971,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Внимание: -paytxfee е зададена твърде голяма! Това е преводната такса, която ще платите ако изпратите този превод.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Apollon Core will not work properly.</source>
-        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, Apollon Портфейла няма да работи правилно.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Apayment Core will not work properly.</source>
+        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, Apayment Портфейла няма да работи правилно.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5123,8 +5123,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Apollon Core Developers</source>
-        <translation>Всички права запазени (c) 2015-%i Apollon Core разработчици</translation>
+        <source>Copyright (C) 2015-%i The Apayment Core Developers</source>
+        <translation>Всички права запазени (c) 2015-%i Apayment Core разработчици</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5211,7 +5211,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Грешка в зареждането на wallet.dat: Портфейла е повреден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Apollon Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Apayment Core</source>
         <translation>Грешка в зареждането на wallet.dat: Портфейла изисква по-нова версия</translation>
     </message>
     <message>
@@ -5267,8 +5267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in XAP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в XAP/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in APM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в APM/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5327,7 +5327,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Apollon Core is shutting down.</source>
+        <source>Initialization sanity check failed. Apayment Core is shutting down.</source>
         <translation>Стартирането на проверка на здравословното състояние на портфейла се провали. Изключваме Портфейла.</translation>
     </message>
     <message>
@@ -5399,8 +5399,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the XAP and zXAP money supply statistics</source>
-        <translation>Индексирай наново XAP и zXAP данните по наличности</translation>
+        <source>Reindex the APM and zAPM money supply statistics</source>
+        <translation>Индексирай наново APM и zAPM данните по наличности</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -5427,8 +5427,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all Apollon specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи Apollon специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
+        <source>Disable all Apayment specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи Apayment специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6107,7 +6107,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Портфейла е заключен.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Apollon Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Apayment Core to complete</source>
         <translation>Портфейла трябва да се пренапише: рестартирайте програмата за завършване на процеса</translation>
     </message>
     <message>
