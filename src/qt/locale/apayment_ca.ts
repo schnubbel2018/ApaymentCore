@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Apollon addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Apollon per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your Apayment addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces Apayment per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Apollon addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Apollon per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your Apayment addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces Apayment per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Apollon will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XAPs from being stolen by malware infecting your computer.</source>
-        <translation>Apollon es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus XAP de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Apayment will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APMs from being stolen by malware infecting your computer.</source>
+        <translation>Apayment es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus APM de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XAP&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES XAPS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APM&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES APMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Core</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Core</translation>
     </message>
     <message>
-        <source>Send coins to a Apollon address</source>
-        <translation>Envia monedes a una adreça Apollon</translation>
+        <source>Send coins to a Apayment address</source>
+        <translation>Envia monedes a una adreça Apayment</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Apollon Core</source>
-        <translation>&amp;Sobre Apollon Core</translation>
+        <source>&amp;About Apayment Core</source>
+        <translation>&amp;Sobre Apayment Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Apollon Core client</source>
-        <translation>Client Apollon core</translation>
+        <source>Apayment Core client</source>
+        <translation>Client Apayment core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Apollon address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Apollon vàlida.</translation>
+        <source>The entered address "%1" is not a valid Apayment address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça Apayment vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Core</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Apollon Core</source>
-        <translation>Sobre Apollon Core</translation>
+        <source>About Apayment Core</source>
+        <translation>Sobre Apayment Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Apollon Core.</source>
-        <translation>Benvingut a Apollon Core.</translation>
+        <source>Welcome to Apayment Core.</source>
+        <translation>Benvingut a Apayment Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Apollon Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Apollon Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Apayment Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Apayment Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Core</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XAP</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 XAP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 APM</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 APM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XAP</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 XAP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 APM</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 APM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XAP to anonymize 10000 XAP</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 XAP per anonimitzar 10000 XAP</translation>
+        <source>This option is the quickest and will cost about ~0.025 APM to anonymize 10000 APM</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 APM per anonimitzar 10000 APM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XAP to anonymize 10000 XAP</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 XAP per anonimitzar 10000 XAP</translation>
+        <source>This option is moderately fast and will cost about 0.05 APM to anonymize 10000 APM</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 APM per anonimitzar 10000 APM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1214,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Apollon after logging in to the system.</source>
-        <translation>Inicia Apollon automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start Apayment after logging in to the system.</source>
+        <translation>Inicia Apayment automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1302,12 +1302,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zXAP</source>
-        <translation>zXAP</translation>
+        <source>zAPM</source>
+        <translation>zAPM</translation>
     </message>
     <message>
-        <source>0.000 000 00 XAP</source>
-        <translation>0.000 000 00 XAP</translation>
+        <source>0.000 000 00 APM</source>
+        <translation>0.000 000 00 APM</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1322,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zXAP</source>
-        <translation>0 zXAP</translation>
+        <source>0 zAPM</source>
+        <translation>0 zaPM</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Apollon Core is shutting down...</source>
-        <translation>Apollon Core s'està tancant...</translation>
+        <source>Apayment Core is shutting down...</source>
+        <translation>Apayment Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Apollon Core</source>
-        <translation>Apollon Core</translation>
+        <source>Apayment Core</source>
+        <translation>Apayment Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1969,12 +1969,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zXAP</source>
-        <translation>zXAP</translation>
+        <source>zAPM</source>
+        <translation>zAPM</translation>
     </message>
     </context>
 <context>
-    <name>apollon-core</name>
+    <name>apayment-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>
