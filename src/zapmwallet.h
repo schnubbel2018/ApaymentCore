@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Apollon_ZXAPWALLET_H
-#define Apollon_ZXAPWALLET_H
+#ifndef Apayment_ZAPMWALLET_H
+#define Apayment_ZAPMWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -13,7 +13,7 @@
 
 class CDeterministicMint;
 
-class CzXAPWallet
+class CzAPMWallet
 {
 private:
     uint256 seedMaster;
@@ -45,4 +45,4 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //Apollon_ZXAPWALLET_H
+#endif //Apayment_ZAPMWALLET_H
