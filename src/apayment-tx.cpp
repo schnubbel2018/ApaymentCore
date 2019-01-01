@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Xapx Core apollon-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Apmx Core apollon-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  apollon-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded apollon transaction") + "\n" +
-                               "  apollon-tx [options] -create [commands]   " + _("Create hex-encoded apollon transaction") + "\n" +
+                               "  apayment-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded apayment transaction") + "\n" +
+                               "  apayment-tx [options] -create [commands]   " + _("Create hex-encoded apayment transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
