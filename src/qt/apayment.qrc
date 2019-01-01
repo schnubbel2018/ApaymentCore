@@ -40,12 +40,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_apollon">res/icons/unit_apollon.png</file>
-        <file alias="unit_mapollon">res/icons/unit_mapollon.png</file>
-        <file alias="unit_uapollon">res/icons/unit_uapollon.png</file>
-        <file alias="unit_tapollon">res/icons/unit_tapollon.png</file>
-        <file alias="unit_tmapollon">res/icons/unit_tmapollon.png</file>
-        <file alias="unit_tuapollon">res/icons/unit_tuapollon.png</file>
+        <file alias="unit_apollon">res/icons/unit_apayment.png</file>
+        <file alias="unit_mapollon">res/icons/unit_mapayment.png</file>
+        <file alias="unit_uapollon">res/icons/unit_uapayment.png</file>
+        <file alias="unit_tapollon">res/icons/unit_tapayment.png</file>
+        <file alias="unit_tmapollon">res/icons/unit_tmapayment.png</file>
+        <file alias="unit_tuapollon">res/icons/unit_tuapayment.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -63,7 +63,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="apollon_logo_horizontal">res/images/apollon_logo_horizontal.png</file>
+        <file alias="apayment_logo_horizontal">res/images/apayment_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow_dark.png</file>
         <file alias="downArrow_small">res/images/downArrow_small_dark.png</file>
         <file alias="downArrow_small_white">res/images/downArrow_small.png</file>
