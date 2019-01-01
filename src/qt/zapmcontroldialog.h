@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZXAPCONTROLDIALOG_H
-#define ZXAPCONTROLDIALOG_H
+#ifndef ZAPMCONTROLDIALOG_H
+#define ZAPMCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -13,16 +13,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZXapControlDialog;
+class ZApmControlDialog;
 }
 
-class ZXapControlDialog : public QDialog
+class ZApmControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZXapControlDialog(QWidget *parent);
-    ~ZXapControlDialog();
+    explicit ZApmControlDialog(QWidget *parent);
+    ~ZApmControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -31,7 +31,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZXapControlDialog *ui;
+    Ui::ZApmControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -51,4 +51,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZXAPCONTROLDIALOG_H
+#endif // ZAPMCONTROLDIALOG_H
