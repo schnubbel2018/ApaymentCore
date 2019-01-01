@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Apollon_ZXAPCHAIN_H
-#define Apollon_ZXAPCHAIN_H
+#ifndef Apayment_ZAPMCHAIN_H
+#define Apayment_ZAPMCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //Apollon_ZXAPCHAIN_H
+#endif //Apayment_ZAPMCHAIN_H
