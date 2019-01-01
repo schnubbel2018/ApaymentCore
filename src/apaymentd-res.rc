@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apollon"
-            VALUE "FileDescription",    "ApollonCored (OSS daemon/client for Apollon)"
+            VALUE "CompanyName",        "1APayment"
+            VALUE "FileDescription",    "ApaymentCored (OSS daemon/client for Apayment)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "ApollonCored"
+            VALUE "InternalName",       "ApaymentCored"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "ApollonCored.exe"
-            VALUE "ProductName",        "ApollonCored"
+            VALUE "OriginalFilename",   "ApaymentCored.exe"
+            VALUE "ProductName",        "ApaymentCored"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
