@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zxapcontroldialog.h"
-#include "ui_zxapcontroldialog.h"
+#include "zapmcontroldialog.h"
+#include "ui_zapmcontroldialog.h"
 
 #include "accumulators.h"
 #include "main.h"
@@ -12,12 +12,12 @@
 using namespace std;
 using namespace libzerocoin;
 
-std::set<std::string> ZXapControlDialog::setSelectedMints;
-std::set<CMintMeta> ZXapControlDialog::setMints;
+std::set<std::string> ZApmControlDialog::setSelectedMints;
+std::set<CMintMeta> ZApmControlDialog::setMints;
 
-ZXapControlDialog::ZXapControlDialog(QWidget *parent) :
+ZApmControlDialog::ZApmControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZXapControlDialog),
+    ui(new Ui::ZApmControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZXapControlDialog::ZXapControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZXapControlDialog::~ZXapControlDialog()
+ZApmControlDialog::~ZApmControlDialog()
 {
     delete ui;
 }
 
-void ZXapControlDialog::setModel(WalletModel *model)
+void ZApmControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZXapControlDialog::updateList()
+void ZApmControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -127,7 +127,7 @@ void ZXapControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZXapControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZApmControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -149,7 +149,7 @@ void ZXapControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZXapControlDialog::updateLabels()
+void ZApmControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -158,12 +158,12 @@ void ZXapControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZXap_int->setText(QString::number(nAmount));
+    ui->labelZApm_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
 }
 
-std::vector<CMintMeta> ZXapControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZApmControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -175,7 +175,7 @@ std::vector<CMintMeta> ZXapControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZXapControlDialog::ButtonAllClicked()
+void ZApmControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;
