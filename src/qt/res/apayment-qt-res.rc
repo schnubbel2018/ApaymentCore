@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apollon"
-            VALUE "FileDescription",    "Apollon Core (OSS GUI client for Apollon)"
+            VALUE "CompanyName",        "1APayment"
+            VALUE "FileDescription",    "Apayment Core (OSS GUI client for Apayment)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "apollon-qt"
+            VALUE "InternalName",       "apayment-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "apollon-qt.exe"
-            VALUE "ProductName",        "Apollon Core"
+            VALUE "OriginalFilename",   "apayment-qt.exe"
+            VALUE "ProductName",        "Apayment Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
