@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend XAPs received on particular addresses,
+# Use the raw transactions API to spend APMs received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a apollond or apollon-Qt running
+# Assumes it will talk to a apollond or apayment-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -35,13 +35,13 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the apollon data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Apollon/")
+        return os.path.expanduser("~/Library/Application Support/Apayment/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Apollon")
+        return os.path.join(os.environ['APPDATA'], "Apayment")
     return os.path.expanduser("~/.apollon")
 
 def read_bitcoin_config(dbdir):
-    """Read the apollon.conf file from dbdir, returns dictionary of settings"""
+    """Read the apayment.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -59,7 +59,7 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "apollon.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "apayment.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
@@ -81,36 +81,36 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(apollond):
-    info = apollond.getinfo()
+def unlock_wallet(apaymentd):
+    info = apaymentd.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            apollond.walletpassphrase(passphrase, 5)
+            apaymentd.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = apollond.getinfo()
+    info = apaymentd.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(apollond):
+def list_available(apaymentd):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in apollond.listreceivedbyaddress(0):
+    for info in apaymentd.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = apollond.listunspent(0)
+    unspent = apaymentd.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = apollond.getrawtransaction(output['txid'], 1)
+        rawtx = apaymentd.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-apollon-address
+        # This code only deals with ordinary pay-to-apayment-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -139,8 +139,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(apollond, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(apollond)
+def create_tx(apaymentd, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(apaymentd)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -159,7 +159,7 @@ def create_tx(apollond, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to apollond.
+    # Decimals, I'm casting amounts to float before sending them to apaymentd.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -170,7 +170,7 @@ def create_tx(apollond, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = apollond.createrawtransaction(inputs, outputs)
+    rawtx = apaymentd.createrawtransaction(inputs, outputs)
     signed_rawtx = apollond.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
@@ -179,10 +179,10 @@ def create_tx(apollond, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(apollond, txinfo):
+def compute_amount_in(apaymentd, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = apollond.getrawtransaction(vin['txid'], 1)
+        in_info = apaymentd.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -193,12 +193,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(apollond, txdata_hex, max_fee):
+def sanity_test_fee(apaymentd, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = apollond.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(apollond, txinfo)
+        txinfo = apaymentd.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(apaymentd, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -221,9 +221,9 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get XAPs from")
+                      help="addresses to get APMs from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send XAPs to")
+                      help="address to get send APMs to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",
@@ -253,14 +253,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(apollond) == False:
+        while unlock_wallet(apaymentd) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(apollond, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(apollond, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(apaymentd, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(apaymentd, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = apollond.sendrawtransaction(txdata)
+            txid = apaymentd.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':
